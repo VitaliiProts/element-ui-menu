@@ -1,30 +1,27 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <el-button @click="startHacking">Start</el-button>
-    </div>
-  </div>
+  <el-menu  mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+  <el-menu-item index="1">Processing Center</el-menu-item>
+  <el-submenu index="2">
+    <template slot="title">Workspacek</template>
+    <el-menu-item id='test' index="2-1">item one</el-menu-item>
+    <el-menu-item index="2-2">item two</el-menu-item>
+    <el-menu-item index="2-3">item three</el-menu-item>
+    <el-submenu index="2-4">
+      <template slot="title">Workce</template>
+      <el-menu-item index="2-4-1">item one</el-menu-item>
+      <el-menu-item index="2-4-2">item two</el-menu-item>
+      <el-menu-item index="2-4-3">item three</el-menu-item>
+    </el-submenu>
+  </el-submenu>
+  <el-menu-item index="3" disabled>Info</el-menu-item>
+  <el-menu-item index="4"><a href="#" target="_blank">Orders</a></el-menu-item>
+</el-menu>
 </template>
 
-<script>
-export default {
-  methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It works!',
-        type: 'success',
-        message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
-        duration: 5000
-      })
-    }
-  }
-}
-</script>
+<script></script>
 
 <style>
-#app {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-}
+  .test {
+    background-color: red !important;
+  }
 </style>
