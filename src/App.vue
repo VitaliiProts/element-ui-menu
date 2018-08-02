@@ -1,9 +1,9 @@
 <template>
-  <el-menu  mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+  <el-menu  mode="horizontal">
   <el-menu-item index="1">Processing Center</el-menu-item>
   <el-submenu index="2">
     <template slot="title">Workspacek</template>
-    <el-menu-item id='test' index="2-1">item one</el-menu-item>
+    <el-menu-item index="2-1">item one</el-menu-item>
     <el-menu-item index="2-2">item two</el-menu-item>
     <el-menu-item index="2-3">item three</el-menu-item>
     <el-submenu index="2-4">
@@ -21,7 +21,5 @@
 <script></script>
 
 <style>
-  .test {
-    background-color: red !important;
-  }
+  
 </style>
